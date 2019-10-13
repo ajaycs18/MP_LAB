@@ -17,13 +17,6 @@ back: mov bh, 00h
         mov ch, al
         mov dl, ah
         mov ah, 02h
-        mov al, cl
-        add al, 00h
-        aam
-        add ax, 3030h
-        mov ch, al
-        mov dl, ah
-        mov ah, 02h
         int 21h
         mov dl, ch
         mov ah, 02h
